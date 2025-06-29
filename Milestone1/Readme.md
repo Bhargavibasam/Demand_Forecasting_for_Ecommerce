@@ -85,12 +85,3 @@ This milestone established a clean pipeline for:
 - Evaluation using MAE, RMSE, and R²
 
 ---
-
-## 🔜 Future Directions (Milestone 2 Preview)
-
-- Apply **XGBoost Regression** for improved performance
-- Introduce **rolling averages, lags, holidays** as new features
-- Evaluate with better visual diagnostics
-- Explore anomaly detection & category-level forecasting
-
----
