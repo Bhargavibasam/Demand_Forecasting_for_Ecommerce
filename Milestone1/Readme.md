@@ -75,3 +75,10 @@ We visualized actual vs predicted sales over the test period:
 The chart shows that while the model captures average demand, it underperforms during periods of fluctuation.
 
 ---
+## ✅ Conclusion
+
+This milestone established a clean pipeline for:
+- Demand data extraction
+- Feature engineering
+- Regression-based modeling
+- Evaluation using MAE, RMSE, and R²
