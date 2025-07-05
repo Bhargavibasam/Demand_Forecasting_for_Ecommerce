@@ -88,9 +88,11 @@ The system offers both functional accuracy and user-friendliness, representing a
 
 ---
 ## 🖼️ Output Images
-![user data](https://encr.pw/SftGe)
-![prediction](https://l1nq.com/38yxB)
-![email](https://encr.pw/NTGwM)
-![database](https://l1nq.com/Xmr3J)
+<img width="1920" height="1200" alt="Image" src="https://github.com/user-attachments/assets/2216f7de-bdec-4c80-8e83-1a4717713f00" />
 
+<img width="1920" height="1200" alt="Image" src="https://github.com/user-attachments/assets/851b16be-89e6-4034-916c-7165380ba1e5" />
+
+<img width="1155" height="840" alt="Image" src="https://github.com/user-attachments/assets/37ed025e-9f40-4c55-a3ad-f712a4dd2c7d" />
+
+<img width="1417" height="706" alt="Image" src="https://github.com/user-attachments/assets/bead605f-8efb-4dcc-a4ae-b4ccc00d8cdd" />
 
