@@ -1,79 +1,92 @@
 # 🛍️ Milestone 2: Personalized Product Category Recommendation System
 
-## Introduction
+## 📌 Objective
 
-This milestone builds a real-time product category recommendation system for an e-commerce platform. It uses machine learning to predict the top 3 categories a customer is most likely to purchase based on demographic, location, and behavioral features. The system includes:
-
-- A Streamlit-based web interface
-- Feature merging and preprocessing pipeline
-- XGBoost-based recommendation engine
-- MongoDB for storing customer activity
-- Email notifications for product recommendations
+To develop an intelligent e-commerce system that recommends the **top 3 product categories** to users based on their demographics, browsing behavior, and location. The project uses a trained ML model, a user-friendly Streamlit interface, MongoDB for storage, and email notifications to enhance the customer experience.
 
 ---
 
-## System Architecture
+## 💡 Features Implemented
 
-### 🔷 Components:
-- **User Input Form**: Takes customer ID, name, email, location, age, login behavior, and discount interest.
-- **Feature Engineering**: Merges `.xlsx` feature files generated in Milestone 1.
-- **ML Model Integration**: Loads pre-trained XGBoost model and label encoder to output top 3 categories.
-- **Email Notification**: Sends an email with personalized category suggestions.
-- **MongoDB Storage**: Logs the input and predictions in `ecommerce_db.category_predictions`.
+### 1. **Streamlit Web Interface**
 
----
+* Collects user input including:
 
-## Functional Implementation
+  * Name
+  * Email
+  * Customer ID
+  * Age
+  * Location (select from dropdown)
+  * Last login days
+  * Discount preference
 
-### 1️⃣ User Input
+### 2. **Feature Merging**
 
-Customers enter:
+* Combines customer information with preprocessed `.xlsx` files:
 
-- Name and email  
-- Age and location  
-- Days since last login  
-- Discount preference  
-- Customer ID (linked with feature files)
+  * `03_customer_features.xlsx`
+  * `04_customer_behaviour_features.xlsx`
+  * `05_customer_recency_features.xlsx`
+  * `06_location_features.xlsx`
+  * `07_age_features.xlsx`
+* Merging is performed using `customer_id`.
+* Conflict resolution for duplicated `location` columns.
 
----
+### 3. **Preprocessing & Encoding**
 
-### 2️⃣ Feature Merging & Transformation
+* Loads a `OneHotEncoder` from `encoder.pkl` to encode categorical columns.
+* Adds missing model columns and ensures the correct order using `features.xlsx`.
 
-- Joins the following `.xlsx` files using `customer_id`:
-  - `03_customer_features.xlsx`
-  - `04_customer_behaviour_features.xlsx`
-  - `05_customer_recency_features.xlsx`
-  - `06_location_features.xlsx`
-  - `07_age_features.xlsx`
-- Cleans column conflicts (e.g., `location_x`, `location_y`)
-- One-hot encodes categorical values using a pre-trained encoder
-- Matches model input structure using `features.xlsx`
+### 4. **Prediction using XGBoost**
 
----
+* Uses a trained `xgb_model_category.pkl` to predict product category probabilities.
+* Converts numerical labels to category names using `label_encoder.pkl`.
+* Selects the top 3 recommended product categories.
 
-### 3️⃣ Model Prediction
+### 5. **Email Notification**
 
-- Uses `xgb_model_category.pkl` to predict probabilities of categories
-- Retrieves top 3 with highest probability
-- Converts encoded labels using `label_encoder.pkl`
+* Sends an automated email using Gmail SMTP.
+* Content includes:
 
----
+  * User name
+  * List of 3 recommended categories
+  * Personalized message
 
-### 4️⃣ Email Notification
+### 6. **MongoDB Storage**
 
-- Sends an email with predicted categories using Gmail SMTP
-- Uses App Password authentication (configured once)
-- Message content is clean and personalized
+* Connects to a local MongoDB database `ecommerce_db`.
+* Stores input data and predicted categories into the `category_predictions` collection.
 
 ---
 
-### 5️⃣ MongoDB Logging
+## 🔧 How to Run
 
-- Saves each submission to local MongoDB `ecommerce_db.category_predictions` collection
-- Enables future analytics and audit
+### Prerequisites
+
+* Python 3.10+
+* Required libraries: pandas, numpy, joblib, streamlit, pymongo, xgboost, scikit-learn
+* MongoDB installed and running (`mongod`)
+* MongoDB Compass installed (optional)
+* Gmail App Password setup for sending email
+
+### Run the App
+
+```bash
+streamlit run ecommerce_predictor.py
+```
+---
+## ✅ Conclusion
+
+This milestone successfully integrated:
+
+* Real-time data input
+* Model-based recommendation logic
+* Email delivery system
+* NoSQL database for historical storage
+
+The system offers both functional accuracy and user-friendliness, representing a solid step toward a deployable e-commerce recommendation engine.
 
 ---
+## 🖼️ Sample Output
 
-## Sample Output
 
-🎯 Top Recommendations:
