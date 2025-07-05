@@ -87,6 +87,10 @@ This milestone successfully integrated:
 The system offers both functional accuracy and user-friendliness, representing a solid step toward a deployable e-commerce recommendation engine.
 
 ---
-## 🖼️ Sample Output
+## 🖼️ Output Images
+![user data](https://encr.pw/SftGe)
+![prediction](https://l1nq.com/38yxB)
+![email](https://encr.pw/NTGwM)
+![database](https://l1nq.com/Xmr3J)
 
 
