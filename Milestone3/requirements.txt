@@ -1,0 +1,18 @@
+streamlit
+pandas
+textblob
+wordcloud
+python-dotenv
+
+# Pinecone SDK v3
+pinecone==3.0.0
+
+# Together AI client + LangChain integration (if needed)
+together
+langchain-together
+
+# NLP + ML stack
+keras==2.11.0
+tensorflow==2.11.0
+transformers==4.36.2
+sentence-transformers==2.2.2
