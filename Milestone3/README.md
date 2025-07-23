@@ -48,17 +48,13 @@ Milestone 3 focuses on customer review analysis in the **E-commerce** domain. It
 
 ---
 
-## **UI Outcomes Images**
+## **Outcomes Images**
 
 ### **Customer Review Submission UI**
-![sentiment]()
-![sentiment2]()
-![sentiment3]()
-![sentiment4]()
-
-### **Manager Review Analysis UI**
-![manager1]()
-![manager2]()
+![sentiment](https://github.com/user-attachments/assets/10e2a0e5-b7f1-44f5-8c63-fe31e7326259)
+![sentiment3](https://github.com/user-attachments/assets/217177d6-7edc-4b4c-ae6a-9b7b079a384b)
+![sentiment4](https://github.com/user-attachments/assets/260e07f5-935e-44ac-b040-a8981faf2b9b)
+![sentiment5](https://github.com/user-attachments/assets/9720f953-5b52-4abf-89b2-2b0e8cc84e77)
 
 ---
 
