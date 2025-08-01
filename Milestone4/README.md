@@ -56,8 +56,15 @@ The final application is a **Streamlit app** with only two modules:
 ---
 ## **Output Images**
 ### Advacnce Forecating Images
-### Data Stored Images
-### DashPrediction Images
+<img width="1903" height="992" alt="Image" src="https://github.com/user-attachments/assets/0cf696a0-e5fd-41a1-b701-76a05a3e5467" /> 
+<img width="1906" height="837" alt="Image" src="https://github.com/user-attachments/assets/6db15e1b-817e-495e-b847-e529d72c65f1" /> 
+<img width="1909" height="981" alt="Image" src="https://github.com/user-attachments/assets/62a1686d-535d-4304-9130-5f64f511febb" />
 
+### Data Stored Images
+<img width="1888" height="849" alt="Image" src="https://github.com/user-attachments/assets/988ffbc0-45f3-4313-bc1b-ea74240be836" /> 
+<img width="1878" height="873" alt="Image" src="https://github.com/user-attachments/assets/9c574a56-06cf-4985-8717-1fb37d337d90" /> 
+
+### DashPrediction Images
+<img width="1903" height="1014" alt="Image" src="https://github.com/user-attachments/assets/e4d8d2d8-6690-4d3b-bf00-641bba0ecd09" />
 
 
